@@ -5,8 +5,7 @@ module.exports = {
     async getAll(req,res,next){
         try{
             const data = await User.getAll();
-            console.log(`Usuarios: $(data)`);
-
+            console.log(`Usuarios: ${data}`);
             return res.status(201).json(data);
         }
         catch(error){
