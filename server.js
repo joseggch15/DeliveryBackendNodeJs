@@ -35,9 +35,7 @@ users = (app);
 
 
 server.listen(3000, '192.168.0.166' || 'localhost', function () { // se define el escuchar y que apunte al localhost en caos de error
-    console.log('Aplicacion de nodeJS ' + process.pid + ' iniciada....');
-
-    //console.log('Aplicacion de nodeJS ' + port + ' iniciada....');
+    console.log('Aplicacion de nodeJS ' + port + ' iniciada....');    
 });
 
 app.get('/', (req, res) => {
