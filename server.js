@@ -38,7 +38,8 @@ Llamando a las rutas
 */
 
 
-users = (app);
+users(app);
+
 
 
 server.listen(3000, '192.168.0.166' || 'localhost', function () { // se define el escuchar y que apunte al localhost en caos de error
@@ -51,7 +52,7 @@ app.get('/', (req, res) => {
     res.status(err.status || 500).send(err.stack); // imprime los errores
 });
 
-
+// para hacer peticiones con el metodo get en postman entonces se utilizaria esta api direction ->192.168.0.166:3000/test
 
 app.get('/test', (req, res) => {
     res.send('Esta es la ruta test');

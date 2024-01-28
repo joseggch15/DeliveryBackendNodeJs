@@ -10,7 +10,7 @@ const options = { // se define un objeto
     }
 }
 
-const pgp = requiere('pg-promise')(options);
+const pgp = require('pg-promise')(options);
 const types = pgp.pg.types;
 types.setTypeParser(1114,function(stringValue){
     return stringValue;
