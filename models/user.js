@@ -14,7 +14,7 @@ User.getAll = () => {
         users
     `;
 
-    return db.manyORNone(sql);
+    return db.manyORNone(sql); // metodo para que retorne muchos o ninguno
 }
 
 module.exports = User;
