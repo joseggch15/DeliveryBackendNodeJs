@@ -24,6 +24,8 @@ app.use(express.urlencoded({
     extended: true,
 }));
 
+app.use(cors());
+
 // configuración para la seguridad
 app.disable('x-powered-by'); // <-- Correct method
 
