@@ -14,7 +14,6 @@ module.exports = {
             return res.status(501).json({
                 succes: false,
                 message: 'Error al obtener los usuarios'
-
             });
         }
 
