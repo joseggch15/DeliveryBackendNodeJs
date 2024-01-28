@@ -1,0 +1,25 @@
+{
+  "name": "backendprojectdelivery",
+  "version": "1.0.0",
+  "description": "backend de la aplicacion delivery",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "flutter",
+    "delivery",
+    "nodejs"
+  ],
+  "author": "Jose Gomez Ch",
+  "license": "MIT",
+  "dependencies": {
+    "bluebird": "^3.7.2",
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "http": "^0.0.1-security",
+    "module-name": "^0.0.1-security",
+    "morgan": "^1.10.0",
+    "pg-promise": "^11.5.4"
+  }
+}
