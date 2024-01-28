@@ -1,9 +1,9 @@
 // se declaran las varias con los paquetes que vamos a utilizar como se observa a continuación
 
-const express = require('express');
-const app = express();
-const http = require('http');
-const server = http.createServer(app);
+const express = require('express'); // se requier el paquete express
+const app = express(); // se ejecuta express para inicializar
+const http = require('http'); // se requiere del paquete http
+const server = http.createServer(app); // se creacrea el paquete server
 const logger = require('morgan');
 const cors = require('cors');
 
@@ -34,8 +34,10 @@ app.set('port', port);
 users = (app);
 
 
-server.listen(3000, '192.168.0.166' || 'localhost', function () { // se define el escuchar y que apunte al localhost
-    console.log('Aplicacion de nodeJS ' + port + ' iniciada....');
+server.listen(3000, '192.168.0.166' || 'localhost', function () { // se define el escuchar y que apunte al localhost en caos de error
+    console.log('Aplicacion de nodeJS ' + process.pid + ' iniciada....');
+
+    //console.log('Aplicacion de nodeJS ' + port + ' iniciada....');
 });
 
 app.get('/', (req, res) => {
