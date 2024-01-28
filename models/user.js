@@ -4,7 +4,7 @@ const db = require ('../config/config.js');
 const User = {};
 
 
-// se crea el metodo para obtener datos 
+// se crea el metodo para obtener datos,
 User.getAll = () => {
     const sql = 
     `
@@ -14,7 +14,7 @@ User.getAll = () => {
         users
     `;
 
-    return db.manyORNone(sql); // metodo para que retorne muchos o ninguno
+    return db.manyOrNone(sql); // metodo para que retorne muchos o ninguno
 }
 
 module.exports = User;
