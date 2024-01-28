@@ -8,7 +8,6 @@ const options = { // se define un objeto
     promiseLib: promise, 
     query: (e) => {
     }
-
 }
 
 const pgp = requiere('pg-promise')(options);
@@ -22,7 +21,7 @@ const databaseConfig = {
     'host': ' 127.0.0.1',
     'port': 5432,
     'database': 'delivery_db',
-    'user': 'postgres',
+    'user': 'postgres', // verificar user db en postgres
     'password':'t00036164'
 };
 

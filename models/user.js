@@ -5,9 +5,8 @@ const User = {};
 
 
 // se crea el metodo para obtener datos 
-User.getAll = ( ) => {
-
-    const hello = 
+User.getAll = () => {
+    const sql = 
     `
     SELECT 
         *
